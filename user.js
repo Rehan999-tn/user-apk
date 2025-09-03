@@ -1,26 +1,9 @@
-const database = {
+{
   "statistics": {
-    "totalVisitors": 0,
-    "uniqueDevices": []
+    "totalVisitors": 1,
+    "uniqueDevices": [
+      "session_1164848674"
+    ]
   },
   "tokens": {}
-};
-
-function getDatabase() {
-  return database;
-}
-
-function updateDatabase(newData) {
-  for (let key in newData) {
-    if (newData.hasOwnProperty(key)) {
-      database[key] = newData[key];
-    }
-  }
-}
-
-if (typeof module !== 'undefined' && module.exports) {
-  module.exports = {
-    getDatabase,
-    updateDatabase
-  };
 }
